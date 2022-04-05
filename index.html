@@ -1,0 +1,30 @@
+<!DOCTYPE html />
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="calc.js"></script>
+    <title>Reiknivél Leikskóla</title>
+</head>
+<body>
+	<!-- Input fyrir reiknivélina -->
+    <label for="quantity"><p>Hversu mörg börn? </p></label><input class="form-control" type="number" name="quantity" id="quantity" min="1" max="10" /><br/>
+    <label for="hours"><p>Hversu marga tíma á dag? </p></label><input class="form-control" type="number" name="hours" id="hours" min="4.25" max="8.5" step="0.25" /><br/>
+    <button class="btn btn-primary btn active" type="submit" id="myBtn" onclick="calculate()">Reikna</button>
+			<!-- Script lætur vera að hægt er að ýta á enter í stað þess að ýta á takkann. -->
+	            <script>
+                document.getElementById("hours")
+                    .addEventListener("keyup", function(event) {
+                    event.preventDefault();
+                    if (event.keyCode === 13) {
+                        document.getElementById("myBtn").click();
+                    }
+                });
+            </script>
+	<!-- Birtir niðurstöður -->
+    <div id="result_div"></div>
+	<p><strong>Fyrirvari: </strong></p><p>Eingöngu er um áætlun að ræða miðað við þá forsendur sem slegnar eru inn.</p>
+</body>
+</html>

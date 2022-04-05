@@ -1,0 +1,24 @@
+body {
+	/* Stíll til að halda samræmi við hafnarfjordur.is */
+	background-color: #EFECE6 !important;
+    color: #252525;
+    line-height: 1.4;
+    font-family: Lato, "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+input[type=number] {
+	/* Passar lengdina á input */
+    width: 10em !important; 
+}
+button{
+	/* Stíll til að gera takkann eins og aðrir takkar á hafnarfjordur.is */
+    border-radius: 0 !important;
+    background-color: #2c549c !important;
+    box-shadow: none !important;
+}
+#result_div{
+    margin-top: 1em;
+}

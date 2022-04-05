@@ -2,7 +2,7 @@
 const hour_cost = 0 //kostnaður á hverja klukkustund
 const food_small = 0 //kostnaður fyrir morgunverð
 const food_big = 0 //kostnaður fyrir hádegismat
-const hour_cost_big = //kostnaður  fyrir klukkustund yfir venjulegan tíma 
+const hour_cost_big = 0//kostnaður  fyrir klukkustund yfir venjulegan tíma 
 const hour_cost_mega = 0 // kostnaður ef meiri á hvern tíma yfir hour_cost_mega
 
 // Lýsa yfir global breytum
